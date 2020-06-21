@@ -1,0 +1,15 @@
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+    margin: 200px auto;
+    height: 540px;
+    background-color: aqua;
+    flex-direction: column;
+}
+
+.content .picture img{
+    max-width: 800px;
+    max-height: 500px;
+}
