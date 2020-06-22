@@ -69,9 +69,10 @@ function addPictureDog(url){
             img.alt = 'dog';
 
             img.onload = () => {
+                strucktDog.innerHTML = '';
+                strucktDog.appendChild(img);
                 if(data[0].breeds.length !== 0){
-                    strucktDog.innerHTML = '';
-                    strucktDog.appendChild(img);
+                    
                     document.getElementById('poroda').innerHTML = 
                     `<span class="spanDog">Порода: </span>${data[0].breeds[0].name}`;
                     document.getElementById('lifeWeight').innerHTML = 
